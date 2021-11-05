@@ -1,0 +1,15 @@
+//my theme colors
+$beige: #d7ccbd;
+$light-pink: #f7eae2;
+$light-gray: #efefed;
+$green: #768165;
+
+$white: #ffffff;
+
+$primary: $beige;
+$secondary: $light-pink;
+$success: $light-gray;
+$danger: $green;
+
+//import bootstrap
+@import "bootstrap";

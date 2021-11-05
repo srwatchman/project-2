@@ -1,0 +1,91 @@
+@import "custom";
+//body main
+button {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+//nav
+.fas, .far {
+    font-size: 2rem;
+}
+
+@keyframes photo {
+    from {
+        opacity: 0.25;
+    }
+    to {
+        opacity: 0.70;
+    }
+}
+
+.logo {
+    animation-name: photo;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+//hero
+
+.hero-section {
+
+    span {
+        font-size: 4rem;
+    }
+}
+//mission statment
+.mission-statement {
+    li {
+        list-style: none;
+    }
+
+    i {
+        padding-right: 1rem;
+    }
+}
+
+.baby-photo {
+    animation-name: photo;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+//why organic statement animation
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.flower-top {
+
+    position: relative;
+}
+
+.flower img{
+    position: absolute;
+}
+
+.flower-bottom {
+    animation-name: fadeout;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+.cotton {
+
+    padding-left: 8rem;
+}
