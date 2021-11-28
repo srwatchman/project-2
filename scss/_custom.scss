@@ -3,13 +3,17 @@ $beige: #d7ccbd;
 $light-pink: #f7eae2;
 $light-gray: #efefed;
 $green: #768165;
+$grey: #939397;
+$navycustom: #4d5869;
 
 $white: #ffffff;
 
-$primary: $beige;
+$primary: $grey;
 $secondary: $light-pink;
 $success: $light-gray;
-$danger: $green;
+$danger: $navycustom;
+$warning: $beige;
+$info: $white;
 
 //import bootstrap
 @import "bootstrap";

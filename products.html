@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickle & Pumpkin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Red+Hat+Display:wght@500;700&family=Red+Hat+Text:wght@500;600;700&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/0de0eb8252.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.css">
+
+    <style type="text/css">
+      .navbar .megamenu{ padding: 1rem; }
+      /* ============ desktop view ============ */
+      @media all and (min-width: 992px) {
+        
+        .navbar .has-megamenu{position:static!important;}
+        .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+        
+      }	
+      /* ============ desktop view .end// ============ */
+      
+      
+      /* ============ mobile view ============ */
+      @media(max-width: 991px){
+        .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+          overflow-y: auto;
+            max-height: 90vh;
+            margin-top:10px;
+        }
+      }
+      /* ============ mobile view .end// ============ */
+      </style>
+      
+      <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+              /////// Prevent closing from click inside dropdown
+              document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                element.addEventListener('click', function (e) {
+                  e.stopPropagation();
+                });
+              })
+          }); 
+        // DOMContentLoaded  end
+      </script>
+    
+</head>
+<body>
+      <!--NAV BAR -->
+      <nav class="navbar navbar-light bg-secondary">
+        <div class="container-fluid">
+          <p class="text-center fw-lighter fs-4 text-uppercase mx-auto">Free shipping on u.s. orders over $50</p>
+        </div>
+      </nav>
+  
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-center" href="index.html">
+            <img src="images/p&plogo.png" alt="Pickle & Pumpkin" width="20%" height="20%"class="d-inline-block align-text-top logo">
+          </a>
+        </div>
+      </nav>
+  
+      <!--MEGA MENU-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/p&pnavlogo.png" alt="pickle & pumpkin logo" width="50%" height="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-primary" id="main_nav">
+  
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown has-megamenu pe-5">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Shop
+                </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-6">
+                      <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                      <div class="col-megamenu">
+                        <h6 class="title">Shop</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="products.html">Blankets</a></li>
+                          <li><a href="products.html">Sheets</a></li>
+                          <li><a href="products.html">Clothes</a></li>
+                          <li><a href="products.html">Accessories</a></li>
+                          <li><a href="products.html">Shop All</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">About Us</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="aboutus.html">Origins</a></li>
+                          <li><a href="aboutus.html">Reviews & Testimonials</a></li>
+                          <li><a href="aboutus.html">Giving Back</a></li>
+                          <li><a href="aboutus.html">Join Our VIP Group</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Blog</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Why We Do What We Do</a></li>
+                          <li><a href="#">Who We Partner With</a></li>
+                          <li><a href="#">Why We Give Back</a></li>
+                          <li><a href="#">Our Mission</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div>    
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Help</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Return & Shipping</a></li>
+                          <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                  </div><!-- end row --> 
+                </div> <!-- dropdown-mega-menu.// -->
+              </li>
+  
+              <li class="nav-item dropdown has-megamenu pe-5">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  About Us
+                </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-6">
+                      <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                      <div class="col-megamenu">
+                        <h6 class="title">Shop</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="products.html">Blankets</a></li>
+                          <li><a href="products.html">Sheets</a></li>
+                          <li><a href="products.html">Clothes</a></li>
+                          <li><a href="products.html">Accessories</a></li>
+                          <li><a href="products.html">Shop All</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">About Us</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="aboutus.html">Origins</a></li>
+                          <li><a href="aboutus.html">Reviews & Testimonials</a></li>
+                          <li><a href="aboutus.html">Giving Back</a></li>
+                          <li><a href="aboutus.html">Join Our VIP Group</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Blog</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Why We Do What We Do</a></li>
+                          <li><a href="#">Who We Partner With</a></li>
+                          <li><a href="#">Why We Give Back</a></li>
+                          <li><a href="#">Our Mission</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div>    
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Help</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Return & Shipping</a></li>
+                          <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                  </div><!-- end row --> 
+                </div> <!-- dropdown-mega-menu.// -->
+              </li>
+  
+              <li class="nav-item dropdown has-megamenu pe-5">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Blog
+                </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-6">
+                      <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                      <div class="col-megamenu">
+                        <h6 class="title">Shop</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="products.html">Blankets</a></li>
+                          <li><a href="products.html">Sheets</a></li>
+                          <li><a href="products.html">Clothes</a></li>
+                          <li><a href="products.html">Accessories</a></li>
+                          <li><a href="products.html">Shop All</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">About Us</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="aboutus.html">Origins</a></li>
+                          <li><a href="aboutus.html">Reviews & Testimonials</a></li>
+                          <li><a href="aboutus.html">Giving Back</a></li>
+                          <li><a href="aboutus.html">Join Our VIP Group</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Blog</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Why We Do What We Do</a></li>
+                          <li><a href="#">Who We Partner With</a></li>
+                          <li><a href="#">Why We Give Back</a></li>
+                          <li><a href="#">Our Mission</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div>    
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Help</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Return & Shipping</a></li>
+                          <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                  </div><!-- end row --> 
+                </div> <!-- dropdown-mega-menu.// -->
+              </li>
+  
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Help
+                </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="row g-3">
+                    <div class="col-lg-3 col-6">
+                      <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                      <div class="col-megamenu">
+                        <h6 class="title">Shop</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="products.html">Blankets</a></li>
+                          <li><a href="products.html">Sheets</a></li>
+                          <li><a href="products.html">Clothes</a></li>
+                          <li><a href="products.html">Accessories</a></li>
+                          <li><a href="products.html">Shop All</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">About Us</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="aboutus.html">Origins</a></li>
+                          <li><a href="aboutus.html">Reviews & Testimonials</a></li>
+                          <li><a href="aboutus.html">Giving Back</a></li>
+                          <li><a href="aboutus.html">Join Our VIP Group</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Blog</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Why We Do What We Do</a></li>
+                          <li><a href="#">Who We Partner With</a></li>
+                          <li><a href="#">Why We Give Back</a></li>
+                          <li><a href="#">Our Mission</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div>    
+                    <div class="col-lg-3 col-6">
+                      <div class="col-megamenu">
+                        <img src="images/flowericon_p&p.png" alt="flower icon" width="25%" height="" class="p-3">
+                        <h6 class="title">Help</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Return & Shipping</a></li>
+                          <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                      </div>  <!-- col-megamenu.// -->
+                    </div><!-- end col-3 -->
+                  </div><!-- end row --> 
+                </div> <!-- dropdown-mega-menu.// -->
+              </li>
+  
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#"> 
+                <i class="fas fa-search text-primary"></i>
+              </a></li>
+              <li class="nav-item"><a class="nav-link" href="#">
+                <i class="far fa-user font-awesome ps-4 text-primary"></i>
+              </a></li>
+            </ul>
+          </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+        </nav>
+
+      <!--BLANKETS-->
+      <section id="blankets" class="blankets pt-4 pb-4 border border-4 border-secondary border-bottom-0">
+        <div class="container">
+          <h2 class="text-center">Blankets</h2>
+          <div class="row row-cols-1 row-cols-md-3 pt-4">
+            <div class="col">
+              <div class="card h-100 border border-1 border-white">
+                <img src="images/llama_blanket.png" class="card-img-top opacity-75" alt="llama patterned blanket" width="20%" height="">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Llama | Blanket</h5>
+                  <ul>
+                    <li>32" X 35"</li>
+                    <li>100% organic cotton</li>
+                    <li>double layered</li>
+                    <li>free of lead, phthalate</li>
+                    <li>flame-retardant</li>
+                  </ul>
+                  <p class="card-text text-danger text-center">$38.00</p>
+                </div>
+                <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                  <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-1 border-white">
+                <img src="images/blanket.png" class="card-img-top opacity-75" alt="blanket" width="20%" height="">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Geometric | Blanket</h5>
+                  <ul>
+                    <li>32" X 35"</li>
+                    <li>100% organic cotton</li>
+                    <li>double layered</li>
+                    <li>free of lead, phthalate</li>
+                    <li>flame-retardant</li>
+                  </ul>
+                  <p class="card-text text-danger text-center">$38.00</p>
+                </div>
+                <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                  <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-1 border-white">
+                <img src="images/cactus_blanket.png" class="card-img-top opacity-75" alt="cactus blanket" width="20%" height="">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Cactus | Blanket</h5>
+                  <ul>
+                    <li>32" X 35"</li>
+                    <li>100% organic cotton</li>
+                    <li>double layered</li>
+                    <li>free of lead, phthalate</li>
+                    <li>flame-retardant</li>
+                  </ul>
+                  <p class="card-text text-danger text-center">$38.00</p>
+                </div>
+                <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                  <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SHEETS-->
+      <section id="sheets" class="sheets pb-4 pt-4 border border-4 border-secondary border-bottom-0">
+        <div class="container">
+          <h2 class="text-center">Sheets</h2>
+          <div class="row row-cols-1 row-cols-md-3 pt-4">
+            <div class="col">
+              <div class="card h-100 border border-1 border-white">
+                <img src="images/floral&pink.JPEG" class="card-img-top opacity-75" alt="floral and pink" width="20%" height="">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Floral & Pink</h5>
+                  <ul>
+                    <li>180-thread count</li>
+                    <li>100% organic cotton</li>
+                    <li>imported</li>
+                    <li>hypoallergenic</li>
+                    <li>no pesticides or synthetic fertilizers</li>
+                  </ul>
+                  <p class="card-text text-danger text-center">$48.00</p>
+                </div>
+                <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                  <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-1 border-white">
+                <img src="images/ffox&chevron.JPEG" class="card-img-top opacity-75" alt="fox & chevron" width="20%" height="">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Fox & Chevron</h5>
+                  <ul>
+                    <li>180-thread count</li>
+                    <li>100% organic cotton</li>
+                    <li>imported</li>
+                    <li>hypoallergenic</li>
+                    <li>no pesticides or synthetic fertilizers</li>
+                  </ul>
+                  <p class="card-text text-danger text-center">$48.00</p>
+                </div>
+                <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                  <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border border-1 border-white">
+                <img src="images/penguins&friends.JPEG" class="card-img-top opacity-75" alt="penguin and friends" width="20%" height="">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Penguins & Friends</h5>
+                  <ul>
+                    <li>180-thread count</li>
+                    <li>100% organic cotton</li>
+                    <li>imported</li>
+                    <li>hypoallergenic</li>
+                    <li>no pesticides or synthetic fertilizers</li>
+                  </ul>
+                  <p class="card-text text-danger text-center">$48.00</p>
+                </div>
+                <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                  <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CLOTHES-->
+     <section id="clothes" class="clothes pt-4 pb-5 border border-4 border-secondary border-bottom-0">
+      <div class="container">
+        <h2 class="text-center">Clothes</h2>
+        <div class="row row-cols-1 row-cols-md-3 pt-4">
+          <div class="col">
+            <div class="card h-100 border border-1 border-white">
+              <img src="images/flower_clothes.jpeg" class="card-img-top opacity-75" alt="flower clothes" width="20%" height="">
+              <div class="card-body">
+                <h5 class="card-title text-center">Long Sleeve Bodysuit | Flowers</h5>
+                <ul>
+                  <li>bodysuit with mittens</li>
+                  <li>100% organic cotton</li>
+                  <li>easy diaper change snaps</li>
+                  <li>free of lead, phthalate</li>
+                  <li>flame-retardant</li>
+                </ul>
+                <p class="card-text text-danger text-center">$20.00</p>
+              </div>
+              <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-1 border-white">
+              <img src="images/geo_clothes.jpeg" class="card-img-top opacity-75" alt="geometric clothes" width="20%" height="">
+              <div class="card-body">
+                <h5 class="card-title text-center">Long Sleeve Bodysuit | Geometric</h5>
+                <ul>
+                  <li>bodysuit with mittens</li>
+                  <li>100% organic cotton</li>
+                  <li>easy diaper change snaps</li>
+                  <li>free of lead, phthalate</li>
+                  <li>flame-retardant</li>
+                </ul>
+                <p class="card-text text-danger text-center">$20.00</p>
+              </div>
+              <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-1 border-white">
+              <img src="images/llama_clothes.jpeg" class="card-img-top opacity-75" alt="llama clothes" width="20%" height="">
+              <div class="card-body">
+                <h5 class="card-title text-center">Long Sleeve Bodysuit | Llama</h5>
+                <ul>
+                  <li>bodysuit with mittens</li>
+                  <li>100% organic cotton</li>
+                  <li>easy diaper change snaps</li>
+                  <li>free of lead, phthalate</li>
+                  <li>flame-retardant</li>
+                </ul>
+                <p class="card-text text-danger text-center">$20.00</p>
+              </div>
+              <div class="card-footer bg-white d-grid gap-2 col-6 mx-auto border-primary">
+                <button type="button" class="btn btn-success btn-lg text-danger">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+      <!--JOIN VIP-->
+      <section id="vip-signup" class="vip-signup bg-success m-5 text-danger">
+        <div class="container">
+          <div class="row align-items-center ps-5">
+            <div class="col">
+              <img src="images/p&plogo.png" alt="pickle and pumpkin logo" width="70%" height="">
+              <h3>Connect with us!</h3>
+              <p>Join our VIP group or follow us on social media!</p>
+              <div class="d-flex flex-row bd-highlight mb-3 fs-2">
+                <div class="p-2 bd-highlight pe-5"><i class="fab fa-instagram"></i></div>
+                <div class="p-2 bd-highlight pe-5"><i class="fab fa-facebook-square"></i></div>
+                <div class="p-2 bd-highlight pe-5"><i class="fab fa-twitter"></i></div>
+                <div class="p-2 bd-highlight"><i class="fab fa-tiktok"></i></div>
+              </div>
+            </div>
+            <div class="col">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Join our email list!</label>
+                  <div id="emailHelp" class="form-text text-primary">Get 10% off by joining along with many other perks!</div>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <button type="button" class="btn btn-info btn-lg text-danger">Learn more</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+      <section id="footer" class="footer bg-secondary p-5">
+        <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+          <div class="p-2 bd-highlight">About Us</div>
+          <div class="p-2 bd-highlight">Contact Us</div>
+          <div class="p-2 bd-highlight">Blog</div>
+          <div class="p-2 bd-highlight">Returns & Shipping</div>
+          <div class="p-2 bd-highlight">Giving Back</div>
+          <div class="p-2 bd-highlight">FAQ</div>
+          <div class="p-2 bd-highlight">Terms of Service</div>
+          <div class="p-2 bd-highlight pe-4">Join our VIP Group</div>
+        </div>
+      </section>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
